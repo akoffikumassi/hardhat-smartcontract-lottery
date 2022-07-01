@@ -25,7 +25,7 @@ contract Raffle is VRFConsumerBaseV2, KeeperCompatibleInterface {
     }
     /* State variables */
     // Chainlink VRF Variables
-    VRFCoordinatorV2Interface private immutable i_vrfCoordinator;
+    VRFCoordinatorV2Interface private immutable i_vrfCoordinator; // contract
     uint64 private immutable i_subscriptionId;
     bytes32 private immutable i_gasLane;
     uint32 private immutable i_callbackGasLimit;
